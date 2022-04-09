@@ -1,16 +1,16 @@
 /*
- *	Analizador Léxico	
+ *	Analizador Lï¿½xico	
  *	Curso: Compiladores y Lenguajes de Bajo de Nivel
- *	Práctica de Programación Nro. 1
+ *	Prï¿½ctica de Programaciï¿½n Nro. 1
  *	
  *	Descripcion:
- *	Implementa un analizador léxico que reconoce números, identificadores, 
- * 	palabras reservadas, operadores y signos de puntuación para un lenguaje
+ *	Implementa un analizador lï¿½xico que reconoce nï¿½meros, identificadores, 
+ * 	palabras reservadas, operadores y signos de puntuaciï¿½n para un lenguaje
  * 	con sintaxis tipo Pascal.
  *	
  */
 
-/*********** Inclusión de cabecera **************/
+/*********** Inclusiï¿½n de cabecera **************/
 #include "anlex.h"
 
 
@@ -70,7 +70,7 @@ void getToken()
 				i++;
 				c=fgetc(archivo);
 				if (i>=TAMLEX)
-					error("Longitud de Identificador excede tamaño de buffer");
+					error("Longitud de Identificador excede tamaï¿½o de buffer");
 			}while(isalpha(c) || isdigit(c));
 			lexema[i]='\0';
 			if (c!=EOF)
